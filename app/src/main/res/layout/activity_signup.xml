@@ -110,6 +110,7 @@
                     android:inputType="textPassword"/>
 
                 <Button
+                    android:id="@+id/bt_signup_join"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="JOIN"

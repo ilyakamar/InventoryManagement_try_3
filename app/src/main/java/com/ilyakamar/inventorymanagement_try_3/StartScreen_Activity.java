@@ -53,7 +53,7 @@ public class StartScreen_Activity extends AppCompatActivity implements View.OnCl
                 startActivity(loginIntent);
                 Log.d(TAG, "onClick: bt_startScreen_logIn");
                 break;
-        }
+        }// end switch
     }// end onClick
 
 
