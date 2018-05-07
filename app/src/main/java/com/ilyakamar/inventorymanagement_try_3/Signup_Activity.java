@@ -162,6 +162,7 @@ public class Signup_Activity extends AppCompatActivity implements View.OnClickLi
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
@@ -170,7 +171,7 @@ public class Signup_Activity extends AppCompatActivity implements View.OnClickLi
 
                             Intent intent = new Intent(Signup_Activity.this,Main_Activity.class);
                             // lehashmid kol activitis shehau lifnei
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
                            // updateUI(user);

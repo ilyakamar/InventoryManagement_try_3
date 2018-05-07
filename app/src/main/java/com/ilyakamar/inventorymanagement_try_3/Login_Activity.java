@@ -153,7 +153,7 @@ public class Login_Activity extends AppCompatActivity implements View.OnClickLis
 
                     Intent intent = new Intent(Login_Activity.this,Main_Activity.class);
                     // lehashmid kol activitis shehau lifnei
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 }else {
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(),
