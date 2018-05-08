@@ -33,7 +33,7 @@
                 android:layout_width="219dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="80dp"
                 android:fontFamily="sans-serif-smallcaps"
                 android:text="welcome"
                 android:textAlignment="center"
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="70dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:orientation="vertical">
@@ -56,24 +56,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/bt_startScreen_join"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/button_black"
-                    android:text="JOIN"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+
 
                 <Button
                     android:id="@+id/bt_startScreen_logIn"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
@@ -81,6 +70,19 @@
                     android:background="@drawable/button_black"
                     android:text="LOG IN"
                     android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bt_startScreen_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/element_outline"
+                    android:text="JOIN"
+                    android:textColor="@color/colorBlack"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
